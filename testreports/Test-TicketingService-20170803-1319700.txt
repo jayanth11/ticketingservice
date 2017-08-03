@@ -1,0 +1,41 @@
+
+-------------------------Test Summary--------------------------------------
+testname: Test-TicketingService-20170803-1319700
+testResult: Test Completed And Succesfull
+
+-------------------------Test Parameters--------------------------------------
+SeatAllocationStrategy: org.jay.ticketingservice.service.seatallocation.FirstBestSeatAvailableStrategy
+seatHoldIntervalSecs: 4
+sleepBetweenRequestMillis: 50 Millis
+sendRequestExecutorThreadPool: 10
+maxSeatsPerRequest: 5
+
+-------------------------Test results--------------------------------------
+total test time: 25 Secs
+numSeatsVenue = 12
+numSeatsAvailable = 0
+numReservedSeats = 12
+expected numReservedSeatsProfiles = 4
+actual numReservedSeatsProfiles = 4
+numMultipleSeatReservations = 4
+numSameRowReservations = 2
+numContinousSeatReservations = 2
+expected numExpiredSeatHolds = 6
+actual numExpiredSeatHolds = 6
+totalRequestCounter = 384
+totalReservedRequestCounter = 191
+totalExpiredRequestCounter = 193
+totalDroppedRequestCounter = 222
+findSeatsTimer mean = 102.64485714285715 millis
+findSeatsTimer max = 1419 millis
+findSeatsTimer 75 percentile = 76.6365 millis
+findSeatsTimer 95 percentile = 1288.118399999998 millis
+----------------
+actualSeatReservedProfiles: [SeatReservedProfile [confirmationId=1, seatIds=[AA-3, AA-4, AA-5, AB-0], customerId=cust-3], SeatReservedProfile [confirmationId=2, seatIds=[AB-1, AB-2, AB-3, AB-4], customerId=cust-4], SeatReservedProfile [confirmationId=3, seatIds=[AA-2, AB-5], customerId=cust-193], SeatReservedProfile [confirmationId=4, seatIds=[AA-0, AA-1], customerId=cust-191]]
+----------------
+expectedSeatReservedProfiles: [SeatReservedProfile [confirmationId=1, seatIds=[AA-3, AA-4, AA-5, AB-0], customerId=cust-3], SeatReservedProfile [confirmationId=2, seatIds=[AB-1, AB-2, AB-3, AB-4], customerId=cust-4], SeatReservedProfile [confirmationId=3, seatIds=[AA-2, AB-5], customerId=cust-193], SeatReservedProfile [confirmationId=4, seatIds=[AA-0, AA-1], customerId=cust-191]]
+----------------
+actualExpiredSeatHoldProfiles: [SeatHoldProfile [seatHoldId=1, customerId=cust-2, seatIds=[AA-0, AA-1, AA-2]], SeatHoldProfile [seatHoldId=4, customerId=cust-7, seatIds=[AB-5]], SeatHoldProfile [seatHoldId=5, customerId=cust-61, seatIds=[AA-0, AA-1, AA-2]], SeatHoldProfile [seatHoldId=6, customerId=cust-69, seatIds=[AB-5]], SeatHoldProfile [seatHoldId=7, customerId=cust-130, seatIds=[AA-0]], SeatHoldProfile [seatHoldId=8, customerId=cust-131, seatIds=[AA-1, AA-2, AB-5]]]
+----------------
+expectedExpiredSeatHoldProfiles: [SeatHoldProfile [seatHoldId=1, customerId=cust-2, seatIds=[AA-0, AA-1, AA-2]], SeatHoldProfile [seatHoldId=4, customerId=cust-7, seatIds=[AB-5]], SeatHoldProfile [seatHoldId=5, customerId=cust-61, seatIds=[AA-0, AA-1, AA-2]], SeatHoldProfile [seatHoldId=6, customerId=cust-69, seatIds=[AB-5]], SeatHoldProfile [seatHoldId=7, customerId=cust-130, seatIds=[AA-0]], SeatHoldProfile [seatHoldId=8, customerId=cust-131, seatIds=[AA-1, AA-2, AB-5]]]
+----------------

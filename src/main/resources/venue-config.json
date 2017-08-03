@@ -1,0 +1,19 @@
+{
+    "name": "Venue Name",
+    "zones": [
+         { "id": "VIP-1", "price": 100.00, "direction": "STAGE_FRONT" }, 
+         { "id": "VIP-2", "price": 50.00, "direction": "STAGE_FRONT" },
+         { "id": "GENERAL", "price": 25.00, "direction": "STAGE_FRONT" }
+     ],
+    "rows": [
+         { "id": "AA", "numOfSeats": 10, "zoneId": "VIP-1", "distanceFromStage": 1 },
+         { "id": "AB", "numOfSeats": 10, "zoneId": "VIP-1", "distanceFromStage": 2 },
+         { "id": "AC", "numOfSeats": 10, "zoneId": "VIP-1", "distanceFromStage": 3 },
+         { "id": "BA", "numOfSeats": 20, "zoneId": "VIP-1", "distanceFromStage": 10 },
+         { "id": "BB", "numOfSeats": 20, "zoneId": "VIP-1", "distanceFromStage": 11 },
+         { "id": "BC", "numOfSeats": 20, "zoneId": "VIP-1", "distanceFromStage": 12 },
+         { "id": "CA", "numOfSeats": 50, "zoneId": "VIP-1", "distanceFromStage": 101 },
+         { "id": "CB", "numOfSeats": 50, "zoneId": "VIP-1", "distanceFromStage": 102 },
+         { "id": "CC", "numOfSeats": 50, "zoneId": "VIP-1", "distanceFromStage": 103 }              
+     ]
+}

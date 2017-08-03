@@ -1,0 +1,56 @@
+{
+    "title": "venue",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "seatingcapacity": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "zones": {
+            "type": "array",
+            "items": { "type": "object" },
+            "properties": {
+               "id": {
+                   "type": "string"
+               },
+               "price": {
+                   "type": "number"
+               },                        
+               "direction": {
+                   "enum": [ "STAGE_FRONT", "STAGE_SIDE", "STAGE_REAR" ],
+                   "default" : "STAGE_FRONT"
+               }                 
+            },
+            "required": [
+               "id", "price"
+            ],            
+            "minItems": 1
+        },
+        "rows": {
+            "type": "array",
+            "items": { "type": "object" },
+            "properties": {
+               "id": {
+                   "type": "string"
+               },
+               "numOfSeats": {
+                   "type": "integer"
+               },
+               "zoneId": {
+                   "id": "string"
+               },
+               "distanceFromStage": {
+                   "id": "integer",
+                   "default" : "0"
+               }                 
+            },
+            "required": [
+               "id", "numOfSeats", "zoneId"
+            ],
+            "minItems": 1
+        } 
+    }
+}

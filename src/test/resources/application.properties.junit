@@ -1,0 +1,16 @@
+#venue properties
+venueConfigFile=venue-config-junit.json
+venueConfigSchemaFile=venue-config-schema.json
+
+seatAllocationServiceStrategyClass=org.jay.ticketingservice.service.seatallocation.FirstBestSeatAvailableStrategy
+bestSeatValueServiceStrategyClass=org.jay.ticketingservice.service.bestseatvalue.LeastRowId
+
+#event related properties
+currentEventIdForBooking=123
+
+#seatholding service properties
+seatHoldTimeIntervalSecs=4
+
+#timer service properties
+timerIntervalInSecs=1
+timerInitDelayInSecs=1
